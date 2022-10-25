@@ -1,0 +1,86 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+#container {
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    background:  #c0f0d4;
+    overflow: hidden;
+    font-family: "Poppins", sans-serif;
+}
+
+#turnText {
+    margin: 5vh auto 2vh;
+    text-align: center;
+    font-size: 6vh;
+    color: #ebabd0;
+}
+
+#game {
+    width: 48vh;
+    height: 48vh;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 16vh);
+    grid-template-rows: repeat(3, 16vh);
+}
+
+#playAgain {
+    display: block;
+    width: 40vh;
+    height: 10vh;
+    margin: 4vh auto 0;
+    text-align: center;
+    border: 0;
+    background: rgba(0, 0, 0, 0);
+    color: #ebabd0;
+    font-size: 4vh;
+    cursor: pointer;
+}
+
+#playAgain:hover {
+    color: #f0c0dc;
+}
+
+.square {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 5px solid #64b5f6;
+    font-size: 10vh;
+    color:  #ebabd0 ;
+    cursor: pointer;
+}
+
+#f00 {
+    border-left: none;
+    border-top: none; 
+}
+#f01 {
+    border-top: none;
+}
+#f02 {
+    border-right: none;
+    border-top: none;
+}
+#f10 {
+    border-left: none;
+}
+#f12 {
+    border-right: none;
+}
+#f20 {
+    border-bottom: none;
+    border-left: none; 
+}
+#f21 {
+    border-bottom: none; 
+}
+#f22 {
+    border-bottom: none;
+    border-right: none; 
+}

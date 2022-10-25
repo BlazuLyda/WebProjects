@@ -1,0 +1,152 @@
+HTML {
+    font-size: 62.5%;
+}
+
+* {
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+h3 {
+    font-weight: normal;
+}
+
+#background {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: hsl(209, 29%, 18%);
+}
+
+#container {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    /* background-color: #e3e5e7; */
+}
+
+#inputBox {
+    position: relative;
+    width: 45rem;
+    height: 7rem;
+    margin: 3rem auto;
+    border-radius: 2rem;
+    background-color:  hsl(145, 62%, 80%);
+}
+
+#inputBox input {
+    position: relative;
+    background-color: rgba(0, 0, 0, 0);
+    outline: none;
+    margin: 2rem 2.5rem 0rem;
+    height: 5rem;
+    width: 34rem;
+    z-index: 100;
+    font-size: 2rem;
+}
+
+#inputBox button {
+    position: absolute;
+    right: 0;
+    background-color:  hsl(207, 89%, 68%);
+    width: 7rem;
+    height: 7rem;
+    border-radius: 2rem;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 4rem;
+    cursor: pointer;
+}
+
+#inputBox button span {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    vertical-align: middle;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+#inputBox button:hover {
+    background-color: hsl(222, 89%, 68%);
+}
+
+#inputBox button:hover > span {
+    transform: translate(-50%, -50%) scale(130%);
+}
+
+#inputBoxText {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    width: 15rem;
+    top: 50%;
+    left: 30%;
+    z-index: 50;
+    font-size: 1.8rem;
+    transition: font-size 0.5s, opacity 0.5s, transform 0.5s;
+}
+
+ul {
+    width: 45rem;
+    margin: 1rem auto;
+    padding: 0;
+    flex-direction: column;
+}
+
+li {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: hsl(189, 60%, 48%);
+    width: 100%;
+    min-height: 7rem;
+    border-radius: 2rem;
+    margin: 2rem 0;
+}
+
+li button {
+    position: absolute;
+    right: 0;
+    width: 7rem;
+    height: 100%;
+    padding: 0;
+    background: hsl(207, 89%, 68%);
+    border-radius: 2rem;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 4rem;
+    cursor: pointer;
+}
+
+li button span {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    transition: transform 0.3s; 
+}
+
+li button:hover {
+    background-color: hsl(222, 89%, 68%);
+}
+
+li button:hover > span {
+    transform: translate(-50%, -50%) scale(130%);
+}
+
+li h2 {
+    word-wrap: break-word;
+    width: 34rem;
+    margin: 2rem 2.5rem;
+}
+
+#checkIcon {
+    width: 100%;
+}
